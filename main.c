@@ -9,14 +9,12 @@
 
 // Funções auxiliares para controlar os LEDs e o buzzer
 void ativar_led_verde() {
-    
 }
 
 void ativar_led_azul(){
 }
 
-void ativar_led_vermelho() { 
-    
+void ativar_led_vermelho() {   
 }
 
 void desativar_todas_leds() { 
@@ -25,12 +23,10 @@ void desativar_todas_leds() {
     gpio_put(red, 0);  // Desliga o LED vermelho
 }
 
-void ativar_todas_leds() {
-   
+void ativar_todas_leds() {  
 }
 
 void ativar_buzzer() {
-
 }
 
 void sair_modo_execucao() {
@@ -56,8 +52,8 @@ int main() {
     gpio_init(buzzer);     // Inicializa o pino do buzzer
     gpio_set_dir(buzzer, GPIO_OUT);  // Define como saída
 
-    /*char key = read_keypad();  // Lê a tecla pressionada no teclado
-
+    /*char key = ADICIONAR AQUI O QUE SERÁ LIDO  // Lê a tecla pressionada no teclado
+      TROCAR AS OPÇÕES DO SWITCH CASE
         if (key != '\0') {  // Se uma tecla foi pressionada
             switch (key) {
                 case 'A':
