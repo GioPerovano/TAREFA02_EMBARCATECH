@@ -29,11 +29,11 @@ void ativar_todas_leds() {
    
 }
 
-void alternar_leds() {
-}
-
 void ativar_buzzer() {
 
+}
+
+void sair_modo_execucao() {
 }
 
 // Inicialização dos LEDs
@@ -55,6 +55,33 @@ int main() {
 
     gpio_init(buzzer);     // Inicializa o pino do buzzer
     gpio_set_dir(buzzer, GPIO_OUT);  // Define como saída
+
+    /*char key = read_keypad();  // Lê a tecla pressionada no teclado
+
+        if (key != '\0') {  // Se uma tecla foi pressionada
+            switch (key) {
+                case 'A':
+                    ativar_led_verde();  // Ativa o LED verde ao pressionar a tecla A
+                    break;
+                case 'B':
+                    controle_led_azul();
+                    break;
+                case 'C':
+                    ativar_led_vermelho();  // Ativa o LED vermelho
+                    break;
+                case 'D':
+                    ativar_todas_leds();  // Ativa todos os LEDs (verde, azul, vermelho)
+                    break;
+                case '#':
+                    ativar_buzzer();  // Ativa o buzzer
+                    break;
+                case '*':
+                    desativar_todas_leds();  // Desativa todos os LEDs
+                    break;
+                case '0':
+                    sair_modo_execucao()  // Sai do modo de execução
+                    break;
+            }*/
   
     return 0;
 }
